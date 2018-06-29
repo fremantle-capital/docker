@@ -1,0 +1,5 @@
+FROM alpine:3.7
+RUN apk add --update bash openssl
+RUN mkdir /app && chown -R nobody: /app
+WORKDIR /app
+USER nobody
