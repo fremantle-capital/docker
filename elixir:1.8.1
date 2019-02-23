@@ -1,0 +1,6 @@
+FROM elixir:1.8.1
+RUN apt-get update && \
+  apt-get upgrade -y && \
+  apt-get install -y git
+RUN mkdir /app
+WORKDIR /app
