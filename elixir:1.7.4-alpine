@@ -1,4 +1,0 @@
-FROM elixir:1.7.4-alpine
-RUN apk add --update git
-RUN mkdir /app
-WORKDIR /app
